@@ -6,7 +6,8 @@ Site vitrine statique (HTML/CSS/JS, sans dépendance) d'un fonds qui acquiert et
 
 ```
 index.html          accueil (pourquoi les forêts, approche, rendement, héritage, formulaire d'intérêt)
-investir.html       « Comment (m')investir ? » : 3 parcours (temps et bras / 10 à 1 000 € / plus de 1 000 €)
+investir.html       « Comment (m')investir ? » : 3 parcours (temps et bras / 10 à 1 000 € / plus de 1 000 €) + FAQ
+actions.html        « Types d'actions » : 4 types de terrains (forêts diversifiées, monocultures, coupes rases, terres agricoles)
 css/styles.css      styles et variables de couleur
 js/main.js          validation et envoi du formulaire, pré-sélection du centre d'intérêt (?type=)
 assets/             photos et favicon
@@ -34,6 +35,8 @@ Puis ouvrir http://localhost:8000.
 - [ ] **Séjours et plantations** (`investir.html`, parcours 1) : renseigner dates, lieux, tarifs et conditions des premiers chantiers dès qu'ils sont connus. Vérifier l'assurance et les autorisations pour accueillir du public.
 - [ ] **Fonds** (`investir.html`, parcours 3) : ticket minimum, investisseurs éligibles, agrément, documentation. Ces conditions relèvent de la réglementation financière applicable : à faire valider par un conseil juridique avant toute communication.
 - [ ] **Champ « Ce qui vous intéresse »** du formulaire : valeurs envoyées `benevole`, `contrepartie`, `fonds`, `info`. Les liens de la page « Comment (m')investir ? » pré-sélectionnent la bonne valeur via `index.html?type=…#interet`.
+- [ ] **FAQ** (`investir.html`) : relire chaque réponse avec la structure réelle du fonds et de la campagne (fiscalité d'un don avec contrepartie, règles en cas d'objectif non atteint, suivi des plantations, accès aux forêts, conditions de souscription). Adapter ou supprimer ce qui ne serait pas tenable.
+- [ ] **Types d'actions** (`actions.html`) : vérifier que la répartition cœur / périphérie correspond à la stratégie réelle. Pour les terres agricoles (type 3), préciser le modèle d'exploitation (qui cultive, sous quelle forme : exploitation directe, bail, partenariat) et la façon dont ces surfaces entrent dans les revenus du fonds, avant de communiquer dessus.
 - [ ] **Engagements** de la section « La certitude d'investir… » (charte dans les statuts, protection juridique du cœur, audits, reporting) : à confirmer avec la structure réelle du fonds.
 
 ## Déploiement
