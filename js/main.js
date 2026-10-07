@@ -6,6 +6,13 @@
   var status = document.getElementById('form-status');
   var button = form.querySelector('button[type="submit"]');
 
+  // Pré-sélection du centre d'intérêt depuis la page « Comment (m')investir ? » (index.html?type=fonds#interet).
+  var type = new URLSearchParams(window.location.search).get('type');
+  var interest = form.elements['interest'];
+  if (type && interest && interest.querySelector('option[value="' + type + '"]')) {
+    interest.value = type;
+  }
+
   function setStatus(message, kind) {
     status.textContent = message;
     status.className = 'status' + (kind ? ' ' + kind : '');
