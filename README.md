@@ -1,2 +1,35 @@
-# forests-ofor-the-future
-sustainable forest fund
+# Forests of/for the Future
+
+Site vitrine statique (HTML/CSS/JS, sans dépendance) d'un fonds qui acquiert et gère des forêts de manière responsable : un cœur intact, sans intervention humaine, entouré d'un anneau de sylviculture durable. Le site mène à un formulaire d'intérêt.
+
+## Structure
+
+```
+index.html          page unique (accueil + formulaire)
+css/styles.css      styles et variables de couleur
+js/main.js          validation et envoi du formulaire
+assets/             photos et favicon
+```
+
+## Prévisualiser en local
+
+```
+python3 -m http.server 8000
+```
+
+Puis ouvrir http://localhost:8000.
+
+## À compléter avant la mise en ligne
+
+- [ ] **Formulaire** : l'attribut `action` du `<form id="interest-form">` pointe vers `https://formspree.io/f/REMPLACER_MOI`. Remplacer par le point d'accès réel. Options simples pour un site statique : Formspree, Basin, Getform, Netlify Forms (si hébergé sur Netlify), ou une petite API maison. Les champs envoyés : `name`, `email`, `phone`, `profile`, `amount`, `message`, `consent`.
+- [ ] **Chiffres clés** (section Rendement) : rendement cible, horizon, surface, part du cœur intact (`[X %]`, `[X ans]`, `[X ha]`).
+- [ ] **Politique de confidentialité** : créer la page et brancher le lien dans le formulaire. Le consentement est obligatoire (RGPD).
+- [ ] **Mentions légales, agrément et informations réglementaires** (pied de page). Avoir le texte relu par un conseil juridique : une page qui présente un fonds à des investisseurs est encadrée.
+- [ ] **Photos** : les deux images (`assets/hero-brume.jpg`, `assets/heritage-sentier.jpg`) sont des images de travail provisoires, de provenance et de licence non vérifiées. Les remplacer par des photos libres de droits (Unsplash, Pexels) ou les vôtres avant la mise en ligne publique.
+- [ ] **Polices** : chargées depuis Google Fonts. Pour limiter les transferts de données vers des tiers, les auto-héberger en production.
+- [ ] **Coordonnées de contact** et nom de domaine.
+- [ ] **Engagements** de la section « La certitude d'investir… » (charte dans les statuts, protection juridique du cœur, audits, reporting) : à confirmer avec la structure réelle du fonds.
+
+## Déploiement
+
+Tout hébergeur de site statique convient : GitHub Pages, Netlify, Vercel, Cloudflare Pages. Le dossier racine à publier est celui qui contient `index.html`.
